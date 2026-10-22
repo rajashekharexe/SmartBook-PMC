@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.conceptglobal.pmc.utils.Itext android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/dicimilar" style="@style/text_slide_drawer" />
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <com.conceptglobal.pmc.utils.Ibutton android:textColor="@color/white" android:id="@id/btn_agree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pmc_agree" style="@style/btnStyleBreakerBay" />
+        <com.conceptglobal.pmc.utils.Ibutton android:textColor="@color/white" android:id="@id/btn_disagree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/pmc_disagree" style="@style/btnStyleBreakerBay" />
+        <com.conceptglobal.pmc.utils.Ibutton android:textColor="@color/white" android:id="@id/btn_inactive_farmer_other_details" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/pmc_btn_Inactive" style="@style/btnStyleBreakerBay" />
+    </LinearLayout>
+</LinearLayout>

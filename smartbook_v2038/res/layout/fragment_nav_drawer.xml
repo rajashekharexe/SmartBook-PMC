@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/nav_header_container" android:background="@color/colorPrimary" android:paddingLeft="10.0dip" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <com.conceptglobal.pmc.utils.CircleImageView android:id="@id/profile_image" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginLeft="20.0dip" android:src="@drawable/ic_profile" />
+        <com.conceptglobal.imaterialdesign.widget.TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/txtusername" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="38.0dip" android:text="username" android:layout_below="@id/profile_image" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/drawerList" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/nav_header_container" app:v_styleId="@array/listview" />
+</RelativeLayout>

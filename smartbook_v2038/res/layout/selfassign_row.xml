@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.conceptglobal.pmc.views.RippleView android:id="@id/rippleview" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" ripple:rv_type="rectangle" ripple:rv_zoom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:ripple="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/contentrl" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.conceptglobal.pmc.utils.CircleImageView android:id="@id/profile_image" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/ic_user2" />
+        <TextView android:id="@id/tv_textview_display" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="test" android:layout_toLeftOf="@id/arrow_right" android:layout_toRightOf="@id/profile_image" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/arrow_right" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/rightarrow" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View android:background="@color/colorPrimary" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/contentrl" />
+</com.conceptglobal.pmc.views.RippleView>

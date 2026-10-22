@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar" />
+    <RadioGroup android:orientation="horizontal" android:id="@id/llTopView" android:background="@color/white" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0" android:layout_below="@id/toolbar">
+        <RadioButton android:enabled="true" android:textColor="@drawable/home_text_color" android:gravity="center" android:id="@id/btn_top_home" android:background="@color/transparent" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:button="@null" android:text="@string/all" android:layout_weight="1.0" />
+        <View android:background="@color/gray3" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <RadioButton android:textColor="@drawable/home_text_color" android:gravity="center" android:id="@id/btn_top_Videos" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:button="@null" android:text="@string/videos" android:layout_weight="1.0" />
+        <View android:background="@color/gray3" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <RadioButton android:textColor="@drawable/home_text_color" android:gravity="center" android:id="@id/btn_top_images" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:button="@null" android:text="@string/images" android:layout_weight="1.0" />
+        <View android:background="@color/gray3" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <RadioButton android:textColor="@drawable/home_text_color" android:gravity="center" android:id="@id/btn_top_html" android:background="@color/transparent" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:button="@null" android:text="@string/html" android:layout_weight="1.0" />
+        <View android:background="@color/gray3" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <RadioButton android:textColor="@drawable/home_text_color" android:gravity="center" android:id="@id/btn_top_pdf" android:background="@color/transparent" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:button="@null" android:text="@string/pdf" android:layout_weight="1.0" />
+        <View android:background="@color/gray3" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    </RadioGroup>
+    <FrameLayout android:id="@id/container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/llBottomView" android:layout_below="@id/llTopView" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/llBottomView" android:layout_width="fill_parent" android:layout_height="50.0dip" android:weightSum="4.0" android:layout_alignParentBottom="true">
+        <ImageButton android:enabled="true" android:layout_gravity="center" android:id="@id/iv_bottom_Home" android:background="@drawable/tab_indicator_promotions" android:padding="10.0dip" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@null" android:layout_weight="1.0" />
+        <View android:background="@color/gray3" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <ImageButton android:layout_gravity="center" android:id="@id/iv_downloads_Home" android:background="@drawable/tab_indicator_promotions" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@null" android:layout_weight="1.0" />
+        <View android:background="@color/gray3" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <ImageButton android:layout_gravity="center" android:id="@id/iv_favourite_Home" android:background="@drawable/tab_indicator_promotions" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_unfavourite" android:layout_weight="1.0" />
+        <View android:background="@color/gray3" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <ImageButton android:layout_gravity="center" android:id="@id/iv_search_Home" android:background="@drawable/tab_indicator_promotions" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@null" android:layout_weight="1.0" />
+        <View android:background="@color/gray3" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <ImageButton android:layout_gravity="center" android:id="@id/iv_settings_Home" android:background="@drawable/tab_indicator_promotions" android:padding="10.0dip" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_settinges" android:layout_weight="1.0" />
+        <View android:background="@color/gray3" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <com.conceptglobal.imaterialdesign.widget.FloatingActionButton android:gravity="end|bottom|center" android:id="@id/fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/fab_margin" android:layout_marginBottom="45.0dip" android:src="@drawable/ic_menu_btn_add" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:v_styleId="@array/fab_color" />
+</RelativeLayout>

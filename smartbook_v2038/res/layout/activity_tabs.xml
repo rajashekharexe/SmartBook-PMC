@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_color" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar" />
+    <TabHost android:id="@id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@android:id/tabs" android:layout_alignParentTop="true">
+                <LinearLayout android:orientation="vertical" android:id="@id/tab1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <include layout="@layout/farmer_personal_details" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/tab4" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <include layout="@layout/farmer_other_details" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/tab5" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <include layout="@layout/list_view_alert" />
+                </LinearLayout>
+            </FrameLayout>
+            <TabWidget android:id="@android:id/tabs" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </TabHost>
+</LinearLayout>

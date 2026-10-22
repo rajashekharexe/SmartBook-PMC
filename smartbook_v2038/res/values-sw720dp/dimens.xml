@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_2">10.0dip</dimen>
+    <dimen name="padding_20">30.0dip</dimen>
+    <dimen name="padding_5">10.0dip</dimen>
+    <dimen name="tabs_height">80.0dip</dimen>
+    <dimen name="text_size_12">20.0dip</dimen>
+    <dimen name="text_size_14">20.0dip</dimen>
+    <dimen name="text_size_20">30.0dip</dimen>
+    <dimen name="text_size_24">30.0dip</dimen>
+</resources>

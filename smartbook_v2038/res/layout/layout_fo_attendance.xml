@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/margin_15"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+        <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_size_14" android:id="@id/tvFoName" android:padding="@dimen/padding_5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+        <com.conceptglobal.pmc.utils.Iedit android:id="@id/etFoName" android:background="@drawable/edit_bg_custom" android:focusable="false" android:layout_width="0.0dip" android:layout_height="30.0dip" android:editable="false" android:drawableRight="@drawable/drop_16" android:layout_weight="1.0" style="@style/edit_text" />
+        <com.conceptglobal.pmc.utils.Itext android:id="@id/tvFoNameID" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_15" android:weightSum="2.0">
+        <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_size_14" android:id="@id/tvFoDate" android:padding="@dimen/padding_5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+        <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_size_14" android:id="@id/tvFODatePicker" android:background="@drawable/input_field_background" android:padding="@dimen/padding_5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_15" android:weightSum="2.0">
+        <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_size_14" android:id="@id/tvFoDistance" android:padding="@dimen/padding_5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+        <android.support.v7.widget.AppCompatEditText android:textSize="@dimen/text_size_14" android:id="@id/edtFODistanceTraveled" android:background="@drawable/input_field_background" android:padding="@dimen/padding_5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:cursorVisible="false" android:maxLines="1" android:maxLength="3" android:layout_weight="1.0" android:inputType="numberDecimal" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_15" android:weightSum="2.0">
+        <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/text_size_14" android:id="@id/tvFoNightHalt" android:padding="@dimen/padding_5" android:layout_width="0.0dip" android:layout_height="35.0dip" android:text="" android:layout_weight="1.0" />
+        <RelativeLayout android:background="@drawable/input_field_background" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Spinner android:layout_gravity="center_vertical" android:id="@id/spinnerFoNightHalt" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginTop="0.0dip" android:layout_alignParentTop="true" android:spinnerMode="dropdown" />
+        </RelativeLayout>
+    </LinearLayout>
+    <android.support.v7.widget.AppCompatTextView android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/tvSubmitFoAttendance" android:background="@color/blue_dark" android:paddingLeft="25.0dip" android:paddingTop="@dimen/margin_25" android:paddingRight="25.0dip" android:paddingBottom="@dimen/margin_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_top_20" android:text="Submit" />
+</LinearLayout>

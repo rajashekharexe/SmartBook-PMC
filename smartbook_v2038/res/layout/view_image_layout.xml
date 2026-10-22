@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/primary_container_image" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/mCapturedBitmap" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/cam_icon" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageButton android:id="@id/discard_image" android:background="@android:color/white" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@android:drawable/ic_menu_delete" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/accept_image" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageButton android:id="@id/accept_image" android:background="@android:color/white" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_done_black_24dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/discard_image" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

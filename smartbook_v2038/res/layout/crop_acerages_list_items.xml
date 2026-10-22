@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/cropLL" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:weightSum="3.0">
+        <com.conceptglobal.pmc.utils.Itext android:textSize="12.0sp" android:textColor="@color/blue_gray" android:gravity="center_horizontal" android:id="@id/textview_crop_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Crop Name" android:singleLine="true" android:layout_weight="1.0" />
+        <com.conceptglobal.pmc.utils.Iedit android:gravity="center_horizontal" android:id="@id/et_old_values" android:background="@drawable/edittext_small" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="25.0dip" android:layout_weight="1.0" style="@style/edit_text" />
+        <com.conceptglobal.pmc.utils.Iedit android:gravity="center_horizontal" android:id="@id/et_new_values" android:background="@drawable/edittext_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="25.0dip" android:layout_weight="1.0" android:inputType="numberDecimal" style="@style/edit_text" />
+    </LinearLayout>
+</LinearLayout>

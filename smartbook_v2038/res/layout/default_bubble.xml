@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="28.0sp" android:gravity="center" android:id="@id/fastscroller_bubble" android:background="@drawable/fastscroller_bubble" android:layout_width="64.0dip" android:layout_height="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

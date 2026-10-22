@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_boarder">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.conceptglobal.pmc.utils.Ibutton android:id="@id/tv_dataof_year" android:background="@drawable/btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/edittext_height" android:text="@string/pmc_heading_data_year" android:layout_weight="0.6" style="@style/text_hint" />
+                <com.conceptglobal.pmc.utils.Iedit android:id="@id/et_dataof_year" android:background="@drawable/edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/edittext_height" android:hint="@string/enter_here" android:layout_weight="0.4" android:inputType="number" style="@style/edit_text" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                <com.conceptglobal.pmc.utils.Ibutton android:id="@id/tv_cultivated_area" android:background="@drawable/btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/edittext_height" android:text="@string/pmc_heading_cultivated_area" android:layout_weight="0.6" style="@style/text_hint" />
+                <com.conceptglobal.pmc.utils.Iedit android:id="@id/et_cultivated_area" android:background="@drawable/edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/edittext_height" android:hint="@string/enter_here" android:layout_weight="0.4" android:inputType="number" style="@style/edit_text" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                <com.conceptglobal.pmc.utils.Ibutton android:id="@id/tv_irrigated_area" android:background="@drawable/btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/edittext_height" android:text="@string/pmc_heading_irrigated_area" android:layout_weight="0.6" style="@style/text_hint" />
+                <com.conceptglobal.pmc.utils.Iedit android:id="@id/et_irrigated_area" android:background="@drawable/edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/edittext_height" android:hint="@string/enter_here" android:layout_weight="0.4" android:inputType="number" style="@style/edit_text" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                <com.conceptglobal.pmc.utils.Ibutton android:id="@id/tv_corn" android:background="@drawable/btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/edittext_height" android:text="@string/pmc_heading_corn" android:layout_weight="0.6" style="@style/text_hint" />
+                <com.conceptglobal.pmc.utils.Iedit android:id="@id/et_corn" android:background="@drawable/edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/edittext_height" android:hint="@string/enter_here" android:layout_weight="0.4" android:inputType="number" style="@style/edit_text" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                <com.conceptglobal.pmc.utils.Ibutton android:id="@id/tv_paddy" android:background="@drawable/btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/edittext_height" android:text="@string/pmc_heading_paddyhybrid" android:layout_weight="0.6" style="@style/text_hint" />
+                <com.conceptglobal.pmc.utils.Iedit android:id="@id/et_paddy" android:background="@drawable/edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/edittext_height" android:hint="@string/enter_here" android:layout_weight="0.4" android:inputType="number" style="@style/edit_text" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                <com.conceptglobal.pmc.utils.Ibutton android:id="@id/tv_paddy_research" android:background="@drawable/btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/edittext_height" android:text="@string/pmc_heading_paddyresearch" android:layout_weight="0.6" style="@style/text_hint" />
+                <com.conceptglobal.pmc.utils.Iedit android:id="@id/et_paddy_research" android:background="@drawable/edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/edittext_height" android:hint="@string/enter_here" android:layout_weight="0.4" android:inputType="number" style="@style/edit_text" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                <com.conceptglobal.pmc.utils.Ibutton android:id="@id/tv_bajra" android:background="@drawable/btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/edittext_height" android:text="@string/pmc_heading_bajra" android:layout_weight="0.6" style="@style/text_hint" />
+                <com.conceptglobal.pmc.utils.Iedit android:id="@id/et_bajra" android:background="@drawable/edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/edittext_height" android:hint="@string/enter_here" android:layout_weight="0.4" android:inputType="number" style="@style/edit_text" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                <com.conceptglobal.pmc.utils.Ibutton android:id="@id/tv_sunflower" android:background="@drawable/btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/edittext_height" android:text="@string/pmc_heading_sunflower" android:layout_weight="0.6" style="@style/text_hint" />
+                <com.conceptglobal.pmc.utils.Iedit android:id="@id/et_sunflower" android:background="@drawable/edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/edittext_height" android:hint="@string/enter_here" android:layout_weight="0.4" android:inputType="number" style="@style/edit_text" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

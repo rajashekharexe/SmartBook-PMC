@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:fitsSystemWindows="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/llmainpopup" android:background="@drawable/card_layout_back" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/llCustomPopup" android:background="@color/colorPrimaryQuarter" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:layout_gravity="right" android:id="@id/buttonDoneMulti" android:background="@drawable/check" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <Button android:layout_gravity="left" android:id="@id/buttonReset" android:background="@drawable/window_close" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <com.conceptglobal.pmc.utils.Itext android:textSize="@dimen/heading_size" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tvCustomPopuphead" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_name" android:layout_toLeftOf="@id/buttonDoneMulti" android:layout_toRightOf="@id/buttonReset" android:layout_centerVertical="true" style="@style/texttypefacenormal" />
+            </RelativeLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.conceptglobal.pmc.utils.Iedit android:layout_gravity="center_vertical" android:id="@id/et_search_list" android:padding="8.0dip" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_margin="10.0dip" android:hint="Search here" android:ems="10" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/llCustomPopupbody" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

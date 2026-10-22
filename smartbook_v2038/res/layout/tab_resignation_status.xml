@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/edit_bg_custom" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:weightSum="1.0">
+        <com.conceptglobal.pmc.utils.Itext android:textColor="@color/black" android:gravity="center|left" android:id="@id/tvStatusUpdatedTime" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.8" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivRefresh" android:layout_width="0.0dip" android:layout_height="28.0dip" android:src="@drawable/ic_refresh_new" android:tint="@color/gray3" android:layout_weight="0.2" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/pbSvDataRefresh" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="28.0dip" android:tint="@color/primary_light" android:indeterminate="true" android:progressDrawable="@color/gray3" android:layout_weight="0.2" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_boarder">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <com.conceptglobal.pmc.utils.Itext android:textColor="@color/black" android:gravity="center|left" android:id="@id/tvresignationDateStatus" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/date" android:layout_weight="0.4" />
+            <com.conceptglobal.pmc.utils.Iedit android:id="@id/etresignationDateStatus" android:background="@drawable/edit_bg_custom" android:focusable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:editable="false" android:drawableRight="@drawable/datepicker_image" android:layout_weight="0.6" style="@style/edit_text" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <com.conceptglobal.pmc.utils.Itext android:textColor="@color/black" android:gravity="center|left" android:id="@id/tvReasonStatus" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/reason" android:layout_weight="0.4" />
+            <com.conceptglobal.pmc.utils.Iedit android:id="@id/etReasonStatus" android:background="@drawable/edit_bg_custom" android:focusable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:editable="false" android:drawableRight="@drawable/drop_16" android:layout_weight="0.6" style="@style/edit_text" />
+            <com.conceptglobal.pmc.utils.Itext android:id="@id/tvReasonIDStatus" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <com.conceptglobal.pmc.utils.Itext android:textColor="@color/black" android:gravity="center|left" android:id="@id/tvDescriptionStatus" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/description" android:layout_weight="0.4" />
+            <com.conceptglobal.pmc.utils.Iedit android:id="@id/etDescriptionStatus" android:background="@drawable/edit_bg_custom" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLength="100" android:layout_weight="0.6" style="@style/edit_text" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <com.conceptglobal.pmc.utils.Itext android:textColor="@color/black" android:gravity="center|left" android:id="@id/tvLastWorkingDayStatus" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/last_working_day" android:layout_weight="0.4" />
+            <com.conceptglobal.pmc.utils.Iedit android:id="@id/etLastWorkingDayStatus" android:background="@drawable/edit_bg_custom" android:focusable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:editable="false" android:drawableRight="@drawable/datepicker_image" android:layout_weight="0.6" style="@style/edit_text" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <com.conceptglobal.pmc.utils.Itext android:textColor="@color/black" android:gravity="center|left" android:id="@id/tvStatus" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/status" android:layout_weight="0.4" />
+            <com.conceptglobal.pmc.utils.Iedit android:id="@id/etStatus" android:background="@drawable/edit_bg_custom" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLength="100" android:layout_weight="0.6" style="@style/edit_text" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <com.conceptglobal.pmc.utils.Itext android:textColor="@color/black" android:gravity="center|left" android:id="@id/tvReviewdByName" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/reviwed_by" android:layout_weight="0.4" />
+            <com.conceptglobal.pmc.utils.Iedit android:id="@id/etReviewdByName" android:background="@drawable/edit_bg_custom" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLength="100" android:layout_weight="0.6" style="@style/edit_text" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <com.conceptglobal.pmc.utils.Itext android:textColor="@color/black" android:gravity="center|left" android:id="@id/tvArrovedDateStatus" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/approved_date" android:layout_weight="0.4" />
+            <com.conceptglobal.pmc.utils.Iedit android:id="@id/etArrovedDateStatus" android:background="@drawable/edit_bg_custom" android:focusable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:editable="false" android:drawableRight="@drawable/datepicker_image" android:layout_weight="0.6" style="@style/edit_text" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

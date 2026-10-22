@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAttendanceApproveList"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rlBottomView"
+        android:layout_below="@+id/toolbar"/>
+    <RelativeLayout
+        android:gravity="center"
+        android:id="@+id/rlBottomView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <com.conceptglobal.imaterialdesign.widget.Button
+            android:gravity="center"
+            android:id="@+id/btn_approve"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Approve"
+            app:v_styleId="@array/button_raise_wave_color"/>
+        <com.conceptglobal.imaterialdesign.widget.Button
+            android:gravity="center"
+            android:id="@+id/btn_reject"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Reject"
+            android:layout_toRightOf="@+id/btn_approve"
+            app:v_styleId="@array/button_raise_wave_color"/>
+    </RelativeLayout>
+</RelativeLayout>

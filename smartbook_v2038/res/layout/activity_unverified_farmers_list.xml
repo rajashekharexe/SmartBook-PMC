@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/main_content" android:background="@color/background_color" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/toolbarrl" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/toolbar" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/unVerifiedFarmersContent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbarrl" />
+</RelativeLayout>

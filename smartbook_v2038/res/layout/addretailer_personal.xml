@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/oprattributes_LL_main" android:background="@color/background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:id="@id/ield_inspections_opr_scroll" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="right" android:layout_gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.4" style="@style/edit_text_disable">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/edt_disable" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.3" style="@style/edit_text_disable">
+                        <com.conceptglobal.pmc.utils.Itext android:id="@id/tv_latitude_personal_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:hint="@string/pmc_label_latitude" android:layout_weight="0.5" />
+                        <com.conceptglobal.pmc.utils.Itext android:id="@id/tv_longitude_personal_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:hint="@string/pmc_label_longitude" android:layout_weight="0.5" />
+                    </LinearLayout>
+                    <ImageView android:id="@id/btn_get_latlong_retailer_personal_details" android:background="@color/colorPrimaryQuarter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/geo" android:text="@string/pmc_label_get" android:layout_weight="0.7" style="@style/btnStyleBreakerBay" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" style="@style/edit_text_disable">
+                    <Button android:id="@id/btnSerachRetailer" android:padding="3.0dip" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/search_retailer" android:layout_weight="1.0" style="@style/btnStyleBreakerBay" />
+                    <Button android:layout_gravity="end" android:id="@id/btnScanAdhar" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/scan_adhar" style="@style/btnStyleBreakerBay" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/operations_dynamic_LL" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:orientation="vertical" android:id="@id/retailer_personal_geodetails_LL" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_color" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_boarder">
+            <ListView android:id="@id/lv_list_activity_inflate" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_add_another_activity" android:background="@color/action_dark_blue" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="3.0dip">
+                <com.conceptglobal.pmc.utils.Itext android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/btn_add_another_activity" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/pmc_add_activity" android:drawableRight="@drawable/ic_menu_btn_add" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.conceptglobal.pmc.utils.Iedit android:textSize="@dimen/text_size_12" android:layout_gravity="center_vertical" android:id="@id/et_search_edit_list" android:padding="8.0dip" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_margin="10.0dip" android:hint="Search here" android:ems="10" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ListView android:id="@id/lvcountries" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:dividerHeight="2.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/nodata" android:background="@drawable/dw_list_selection" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.conceptglobal.pmc.utils.Itext android:textSize="16.0sp" android:textColor="@android:color/black" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="   No Data Available             " android:drawableRight="@drawable/abs__ic_ab_next_holo_light" />
+    </LinearLayout>
+</LinearLayout>

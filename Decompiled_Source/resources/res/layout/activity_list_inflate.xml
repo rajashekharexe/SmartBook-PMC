@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/ll_activity"
+    android:background="@drawable/card_layout_back"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.conceptglobal.pmc.utils.Itext
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/tv_actvity_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:text="Activity 1"
+        android:layout_weight="0.5"
+        style="@style/text_activity_list"/>
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/iv_actvity_assigned"
+        android:visibility="gone"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/c"
+        android:layout_weight="0.2"/>
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/iv_actvity_tick"
+        android:visibility="gone"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/a"
+        android:layout_weight="0.2"/>
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/iv_delete_activity_display"
+        android:visibility="gone"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_action_discard"
+        android:layout_weight="0.2"/>
+</LinearLayout>

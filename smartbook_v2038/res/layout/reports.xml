@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/content" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/selectlayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="4.0">
+        <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/selecttitle" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="Select Activity" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/no_data_found_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.conceptglobal.pmc.utils.Itext android:id="@id/tv_no_data_found" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="@string/pmc_no_data_found" style="@style/text_activity_list" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/Listlayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/listViewcustomerType" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip" />
+        <com.conceptglobal.ifastscroll.FastScroller android:orientation="vertical" android:id="@id/fastscroll" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

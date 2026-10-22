@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_below="@id/toolbar">
+        <LinearLayout android:orientation="vertical" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_boarder">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.conceptglobal.pmc.utils.Itext android:textColor="@color/black" android:gravity="center|left" android:id="@id/tvLeaveType" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/leave_type" android:layout_weight="0.4" />
+                <com.conceptglobal.pmc.utils.Iedit android:id="@id/etLeaveType" android:background="@drawable/edit_bg_custom" android:focusable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:editable="false" android:drawableRight="@drawable/drop_16" android:layout_weight="0.6" style="@style/edit_text" />
+                <com.conceptglobal.pmc.utils.Itext android:id="@id/tvLeaveTypeID" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <com.conceptglobal.pmc.utils.Itext android:textColor="@color/black" android:gravity="center|left" android:id="@id/tvDays" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/days" android:layout_weight="0.4" />
+                <com.conceptglobal.pmc.utils.Iedit android:id="@id/etDayType" android:background="@drawable/edit_bg_custom" android:focusable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:editable="false" android:drawableRight="@drawable/drop_16" android:layout_weight="0.6" style="@style/edit_text" />
+                <com.conceptglobal.pmc.utils.Itext android:id="@id/tvDayTypeID" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <com.conceptglobal.pmc.utils.Itext android:textColor="@color/black" android:gravity="center|left" android:id="@id/tvfromDate" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="From Date" android:layout_weight="0.4" />
+                <com.conceptglobal.pmc.utils.Iedit android:id="@id/etFromDate" android:background="@drawable/edit_bg_custom" android:focusable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:editable="false" android:drawableRight="@drawable/datepicker_image" android:layout_weight="0.6" style="@style/edit_text" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <com.conceptglobal.pmc.utils.Itext android:textColor="@color/black" android:gravity="center|left" android:id="@id/tvToDate" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/to_date" android:layout_weight="0.4" />
+                <com.conceptglobal.pmc.utils.Iedit android:id="@id/etToDate" android:background="@drawable/edit_bg_custom" android:focusable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:editable="false" android:drawableRight="@drawable/datepicker_image" android:layout_weight="0.6" style="@style/edit_text" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <com.conceptglobal.pmc.utils.Itext android:textColor="@color/black" android:gravity="center|left" android:id="@id/tvNoOfDays" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/no_of_days" android:layout_weight="0.4" />
+                <com.conceptglobal.pmc.utils.Iedit android:id="@id/etNoOfDays" android:background="@drawable/edit_bg_custom" android:focusable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:editable="false" android:layout_weight="0.6" android:inputType="number" style="@style/edit_text" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <com.conceptglobal.pmc.utils.Itext android:textColor="@color/black" android:gravity="center|left" android:id="@id/tvReasonType" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/reason_type" android:layout_weight="0.4" />
+                <com.conceptglobal.pmc.utils.Iedit android:id="@id/etReasonType" android:background="@drawable/edit_bg_custom" android:focusable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:editable="false" android:drawableRight="@drawable/drop_16" android:layout_weight="0.6" style="@style/edit_text" />
+                <com.conceptglobal.pmc.utils.Itext android:id="@id/tvReasonTypeID" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <com.conceptglobal.pmc.utils.Itext android:textColor="@color/black" android:gravity="center|left" android:id="@id/tvRemarks" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/attendance_remarks" android:layout_weight="0.4" />
+                <com.conceptglobal.pmc.utils.Iedit android:id="@id/etRemarks" android:background="@drawable/edit_bg_custom" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLength="100" android:layout_weight="0.6" style="@style/edit_text" />
+            </LinearLayout>
+            <com.conceptglobal.pmc.utils.Ibutton android:textColor="@color/white" android:layout_gravity="center" android:id="@id/btn_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:text="Submit" style="@style/btnStyleBreakerBay" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@id/llIdTl" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/llId" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/black" android:gravity="end" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Total Leaves :" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/black" android:gravity="start" android:id="@id/txtLeaveCount" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="14.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/llId" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/llPending" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/black" android:gravity="end" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Leave Balance :" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/black" android:gravity="start" android:id="@id/txtLeaveblns" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="14.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/llPending" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/black" android:gravity="end" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Pending Approve:" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/black" android:gravity="start" android:id="@id/txtPending" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="14.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_16" android:textStyle="italic" android:textColor="@color/red" android:gravity="center" android:id="@id/txtLink" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip" android:text="Click Here To View Report" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/black" android:gravity="center" android:id="@id/txtOffline" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/text_size_20" android:layout_alignParentBottom="true" />
+</RelativeLayout>

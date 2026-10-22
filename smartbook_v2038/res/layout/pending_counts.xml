@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/pendingDetailsLL" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.conceptglobal.imaterialdesign.widget.TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/black" android:id="@id/txt_farmerPendings" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Farmer Details :" android:layout_weight="0.3" app:v_styleId="@array/text_body" />
+            <com.conceptglobal.imaterialdesign.widget.TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/blue_gray" android:id="@id/tv_farmersCount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.7" app:v_styleId="@array/text_title" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <com.conceptglobal.imaterialdesign.widget.TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/black" android:id="@id/txt_retailerPendings" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Retailers Count :" android:layout_weight="0.3" app:v_styleId="@array/text_body" />
+            <com.conceptglobal.imaterialdesign.widget.TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/blue_gray" android:id="@id/tv_retailersCount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.7" app:v_styleId="@array/text_title" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <com.conceptglobal.imaterialdesign.widget.TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/black" android:id="@id/txt_assignmentPendings" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Assignments :" android:layout_weight="0.3" app:v_styleId="@array/text_body" />
+            <com.conceptglobal.imaterialdesign.widget.TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/blue_gray" android:id="@id/tv_assignmentCount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.7" app:v_styleId="@array/text_title" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <com.conceptglobal.imaterialdesign.widget.TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/black" android:id="@id/txt_picturePendings" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Pictures :" android:layout_weight="0.3" app:v_styleId="@array/text_body" />
+            <com.conceptglobal.imaterialdesign.widget.TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/blue_gray" android:id="@id/tv_imagesCount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.7" app:v_styleId="@array/text_title" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

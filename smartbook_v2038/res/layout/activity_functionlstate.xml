@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:background="@color/background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <com.conceptglobal.pmc.utils.Iedit android:id="@id/et_state" android:background="@drawable/card_layout_back" android:paddingLeft="5.0dip" android:focusable="false" android:layout_width="220.0dip" android:layout_height="60.0dip" android:hint="State" android:editable="false" android:drawableRight="@drawable/drop" />
+            <com.conceptglobal.pmc.utils.Itext android:id="@id/tv_stateid" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <com.conceptglobal.pmc.utils.Iedit android:id="@id/et_district" android:background="@drawable/card_layout_back" android:paddingLeft="5.0dip" android:focusable="false" android:layout_width="220.0dip" android:layout_height="60.0dip" android:hint="District" android:editable="false" android:drawableRight="@drawable/drop" />
+            <com.conceptglobal.pmc.utils.Itext android:id="@id/tv_districtid" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:weightSum="2.0">
+            <com.conceptglobal.pmc.utils.Ibutton android:id="@id/btn_download" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Download" style="@style/btnStyleBreakerBay" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

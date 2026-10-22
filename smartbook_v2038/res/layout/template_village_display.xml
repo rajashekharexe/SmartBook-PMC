@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_temp_village_display" android:background="@drawable/dw_list_selection" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.conceptglobal.pmc.utils.Itext android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/blue_gray" android:id="@id/tv_name_temp_village_display" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.conceptglobal.pmc.utils.Itext android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/pmc_hint_disc_village_disp" android:layout_weight="0.25" style="@style/text_activity_list" />
+            <com.conceptglobal.pmc.utils.Itext android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/pmc_hint_count_village_disp" android:layout_weight="0.75" style="@style/text_activity_list" />
+        </LinearLayout>
+        <LinearLayout android:background="@color/ash_dark" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <TableLayout android:id="@id/tl_temp_village_display" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" />
+    </LinearLayout>
+</LinearLayout>

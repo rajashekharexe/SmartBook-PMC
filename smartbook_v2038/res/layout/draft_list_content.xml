@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/toolbarrl" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/toolbar" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/fab" android:layout_below="@id/toolbarrl">
+        <RelativeLayout android:gravity="center" android:id="@id/segmentrl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="80.0dip">
+            <com.conceptglobal.pmc.utils.SegmentedGroup android:orientation="horizontal" android:id="@id/cssegment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <RadioButton android:id="@id/rbdraft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_draft" style="@style/RadioButton" />
+                <RadioButton android:id="@id/rbnotsent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_notsent" style="@style/RadioButton" />
+                <RadioButton android:id="@id/rbsent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_sent" android:singleLine="true" style="@style/RadioButton" />
+                <RadioButton android:id="@id/rbAll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_all" style="@style/RadioButton" />
+            </com.conceptglobal.pmc.utils.SegmentedGroup>
+        </RelativeLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/segmentrl">
+            <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/grey_light" android:dividerHeight="3.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

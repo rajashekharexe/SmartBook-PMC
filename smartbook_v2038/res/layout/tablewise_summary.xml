@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tablewiseSummary" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/pendingDetailsLL" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.conceptglobal.imaterialdesign.widget.TextView android:textSize="@dimen/text_size_12" android:textColor="@color/black" android:id="@id/txt_farmerTable" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Farmer Details :" android:layout_weight="0.3" />
+            <com.conceptglobal.imaterialdesign.widget.TextView android:textSize="@dimen/text_size_12" android:textColor="@color/blue_gray" android:id="@id/tv_farmersTableCount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.7" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <com.conceptglobal.imaterialdesign.widget.TextView android:textSize="@dimen/text_size_12" android:textColor="@color/black" android:id="@id/txt_farmerCropTable" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Farmer Crops :" android:layout_weight="0.3" />
+            <com.conceptglobal.imaterialdesign.widget.TextView android:textSize="@dimen/text_size_12" android:textColor="@color/blue_gray" android:id="@id/tv_farmersCropTableCount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.7" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <com.conceptglobal.imaterialdesign.widget.TextView android:textSize="@dimen/text_size_12" android:textColor="@color/black" android:id="@id/txt_retailerTable" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Retailers Details :" android:layout_weight="0.3" />
+            <com.conceptglobal.imaterialdesign.widget.TextView android:textSize="@dimen/text_size_12" android:textColor="@color/blue_gray" android:id="@id/tv_retailersTableCount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.7" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <com.conceptglobal.imaterialdesign.widget.TextView android:textSize="@dimen/text_size_12" android:textColor="@color/black" android:id="@id/txt_retailerCropTable" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Retailers Crops :" android:layout_weight="0.3" />
+            <com.conceptglobal.imaterialdesign.widget.TextView android:textSize="@dimen/text_size_12" android:textColor="@color/blue_gray" android:id="@id/tv_retailersCropTableCount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.7" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <com.conceptglobal.imaterialdesign.widget.TextView android:textSize="@dimen/text_size_12" android:textColor="@color/black" android:id="@id/txt_retailerCompTable" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Retailers Companies :" android:layout_weight="0.3" />
+            <com.conceptglobal.imaterialdesign.widget.TextView android:textSize="@dimen/text_size_12" android:textColor="@color/blue_gray" android:id="@id/tv_retailersCompTableCount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.7" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <com.conceptglobal.imaterialdesign.widget.TextView android:textSize="@dimen/text_size_12" android:textColor="@color/black" android:id="@id/txt_assignmentActivitiesTable" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Assignments :" android:layout_weight="0.3" />
+            <com.conceptglobal.imaterialdesign.widget.TextView android:textSize="@dimen/text_size_12" android:textColor="@color/blue_gray" android:id="@id/tv_assignmentActTableCount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.7" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <com.conceptglobal.imaterialdesign.widget.TextView android:textSize="@dimen/text_size_12" android:textColor="@color/black" android:id="@id/txt_assignmentVisitTable" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="AssigmentVisit :" android:layout_weight="0.3" />
+            <com.conceptglobal.imaterialdesign.widget.TextView android:textSize="@dimen/text_size_12" android:textColor="@color/blue_gray" android:id="@id/tv_assignmentVisitTableCount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.7" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <com.conceptglobal.imaterialdesign.widget.TextView android:textSize="@dimen/text_size_12" android:textColor="@color/black" android:id="@id/txt_pictureTable" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Pictures :" android:layout_weight="0.3" />
+            <com.conceptglobal.imaterialdesign.widget.TextView android:textSize="@dimen/text_size_12" android:textColor="@color/blue_gray" android:id="@id/tv_imagesTableCount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.7" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <com.conceptglobal.imaterialdesign.widget.TextView android:textSize="@dimen/text_size_12" android:textColor="@color/black" android:id="@id/txt_videoTable" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Videos :" android:layout_weight="0.3" />
+            <com.conceptglobal.imaterialdesign.widget.TextView android:textSize="@dimen/text_size_12" android:textColor="@color/blue_gray" android:id="@id/tv_videosTableCount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.7" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

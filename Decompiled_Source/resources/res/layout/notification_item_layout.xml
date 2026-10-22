@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewNotifications"
+    android:background="@color/notification_green_color"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/NotificationMainLayout"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp">
+        <TextView
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:id="@+id/title"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"/>
+        <TextView
+            android:textSize="14sp"
+            android:textColor="@color/notification_gray_color"
+            android:gravity="center_vertical"
+            android:id="@+id/message"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <com.conceptglobal.pmc.utils.Ibutton
+            android:textColor="@color/white"
+            android:layout_gravity="right"
+            android:id="@+id/btn_read"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:text="Mark As Read"
+            style="@style/btnStyleBreakerBay"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+# Build & Intermediate artifacts
+smartbook_v2038/build/
+*.idsig
+*.tmp
+*.log
+
+# Nested git sub-repos & agent configs
+reverse-skill/
+.agents/
+
+# Decompiler binaries
+jadx/
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+
+# Temp scratch scripts
+*.pyc
+__pycache__/

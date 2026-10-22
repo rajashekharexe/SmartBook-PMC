@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:icon="@drawable/ic_action_view_as_grid"
+            android:id="@+id/home"
+            android:checked="false"
+            android:title="@string/home"/>
+        <item
+            android:icon="@drawable/ic_action_view_as_grid"
+            android:id="@+id/mastersync"
+            android:checked="false"
+            android:title="@string/pmc_master_sync"/>
+        <item
+            android:icon="@drawable/ic_action_download"
+            android:id="@+id/apppatch"
+            android:checked="false"
+            android:title="@string/pmc_app_patch"/>
+        <item
+            android:icon="@drawable/ic_action_about"
+            android:id="@+id/abtpmc"
+            android:checked="false"
+            android:title="@string/pmc_about_pmc"/>
+        <item
+            android:icon="@drawable/ic_action_repeat"
+            android:id="@+id/upload"
+            android:checked="false"
+            android:title="@string/pmc_upload"/>
+        <item
+            android:icon="@drawable/ic_action_download"
+            android:id="@+id/clrdata"
+            android:checked="false"
+            android:title="@string/pmc_clear_db"/>
+    </group>
+</menu>

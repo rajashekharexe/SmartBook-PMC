@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center|left" android:id="@id/tvAttrName" android:background="@drawable/edit_bg_table" android:layout_width="150.0dip" android:layout_height="fill_parent" android:minLines="2" android:singleLine="false" android:layout_alignTop="@id/tvAttrValue" android:layout_alignBottom="@id/tvAttrValue" />
+    <TextView android:gravity="center|left" android:id="@id/tvAttrValue" android:background="@drawable/edit_bg_table" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minLines="2" android:singleLine="false" android:layout_toRightOf="@id/tvAttrName" />
+</RelativeLayout>

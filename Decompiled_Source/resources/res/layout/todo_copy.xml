@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/main_content"
+    android:background="@color/background_color"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/toolbarrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/toolbar"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarrl">
+        <com.conceptglobal.imaterialdesign.widget.TabIndicatorView
+            android:id="@+id/main_tiv"
+            android:paddingLeft="30dp"
+            android:clipToPadding="false"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:v_styleId="@array/tab_indicator"/>
+        <com.conceptglobal.pmc.views.CustomViewPager
+            android:id="@+id/main_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    </LinearLayout>
+    <com.conceptglobal.imaterialdesign.widget.FloatingActionButton
+        android:gravity="end|bottom"
+        android:id="@+id/fab_todo_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="45dp"
+        android:src="@drawable/ic_menu_btn_add"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        app:v_styleId="@array/fab_color"/>
+</RelativeLayout>

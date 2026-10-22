@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.conceptglobal.pmc.utils.Itext xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="16sp"
+    android:textColor="@color/black"
+    android:id="@+id/spinnerTarget"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>

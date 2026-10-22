@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/parent_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.conceptglobal.pmc.utils.Ibutton
+            android:id="@+id/tv_label"
+            android:background="@drawable/btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="@dimen/edittext_height"
+            android:layout_weight="0.6"
+            style="@style/text_hint"/>
+        <com.conceptglobal.pmc.utils.Iedit
+            android:id="@+id/et_content"
+            android:background="@drawable/edt_disable"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/edittext_height"
+            android:hint="Select"
+            android:editable="false"
+            android:layout_weight="0.4"
+            style="@style/edit_text_disable"/>
+    </LinearLayout>
+</LinearLayout>

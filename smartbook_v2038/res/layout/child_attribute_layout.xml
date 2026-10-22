@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#4d000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/scrollLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:fillViewport="false" android:layout_above="@id/BtnAdd_noofvillages">
+        <LinearLayout android:orientation="vertical" android:id="@id/villageviewLayout" android:paddingBottom="50.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" />
+    </ScrollView>
+    <com.conceptglobal.imaterialdesign.widget.FloatingActionButton android:gravity="end|bottom|center" android:id="@id/BtnAdd_noofvillages" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_menu_btn_add" android:layout_above="@id/btnLayout" android:layout_alignParentRight="true" app:v_styleId="@array/fab_color" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/btnLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textColor="@color/white" android:id="@id/BtnFinish_noofvillages" android:background="@drawable/btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:minHeight="40.0dip" android:text="Finish" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/linearlayout_mobile" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <com.conceptglobal.pmc.utils.Itext android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pmc_heading_mobile" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:weightSum="2.0">
+        <com.conceptglobal.pmc.utils.Itext android:textSize="12.0sp" android:textColor="@color/blue_gray" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pmc_old" android:singleLine="true" android:layout_weight="1.0" />
+        <com.conceptglobal.pmc.utils.Iedit android:id="@id/et_mobile_old" android:background="@drawable/edit" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="20.0dip" android:layout_weight="1.0" style="@style/edit_text" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:weightSum="2.0">
+        <com.conceptglobal.pmc.utils.Itext android:textSize="12.0sp" android:textColor="@color/blue_gray" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pmc_new" android:singleLine="true" android:layout_weight="1.0" />
+        <com.conceptglobal.pmc.utils.Iedit android:id="@id/et_mobile_new" android:background="@drawable/edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="20.0dip" android:layout_weight="1.0" style="@style/edit_text" />
+    </LinearLayout>
+</LinearLayout>

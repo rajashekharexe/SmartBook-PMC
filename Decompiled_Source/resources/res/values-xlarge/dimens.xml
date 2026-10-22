@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_dialog_fixed_width_major">50%</dimen>
+    <dimen name="abc_dialog_fixed_width_minor">70%</dimen>
+    <dimen name="abc_dialog_min_width_major">45%</dimen>
+    <dimen name="abc_dialog_min_width_minor">72%</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="add_crop_view_height">35dp</dimen>
+    <dimen name="edittext_height">45dp</dimen>
+    <dimen name="heading_size">25dp</dimen>
+    <dimen name="home_page_tile_min_height">150dp</dimen>
+    <dimen name="logo_height">100dp</dimen>
+    <dimen name="logo_width">200dp</dimen>
+    <dimen name="navigation_drawer_width">400dp</dimen>
+    <dimen name="padding_2">2dp</dimen>
+    <dimen name="padding_20">20dp</dimen>
+    <dimen name="padding_5">5dp</dimen>
+    <dimen name="table_cell_width">200dp</dimen>
+    <dimen name="tabs_height">55dp</dimen>
+    <dimen name="text_size">30sp</dimen>
+    <dimen name="text_size_12">12dp</dimen>
+    <dimen name="text_size_14">14dp</dimen>
+    <dimen name="text_size_20">20dp</dimen>
+</resources>

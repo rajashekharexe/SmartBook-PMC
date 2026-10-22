@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+        <android.support.v7.widget.AppCompatTextView
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@+id/tvSelfAttendance"
+            android:background="@color/dark_blue"
+            android:padding="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Self Attendance"
+            android:layout_weight="1"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/dark_blue"
+            android:gravity="center"
+            android:id="@+id/tvFOAttendance"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="FO Attendance"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <View
+        android:background="@color/blue_dark"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+    <RelativeLayout
+        android:id="@+id/rl_self_attendance"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_15">
+        <include layout="@layout/layout_self_attendance"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_fo_attendance"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_15">
+        <include layout="@layout/layout_fo_attendance"/>
+    </RelativeLayout>
+</LinearLayout>

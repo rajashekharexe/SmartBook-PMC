@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:paddingTop="5.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:paddingTop="@dimen/padding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home" android:layout_centerVertical="true" />
+    <com.conceptglobal.imaterialdesign.widget.TextView android:textSize="@dimen/text_size_14" android:textStyle="bold" android:id="@id/title" android:paddingLeft="@dimen/padding_20" android:paddingTop="@dimen/padding_5" android:paddingBottom="@dimen/padding_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="home" android:layout_toRightOf="@id/icon" style="@style/Material.Drawable.Ripple.Wave.Light" />
+</RelativeLayout>

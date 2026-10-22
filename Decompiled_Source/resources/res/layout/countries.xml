@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.conceptglobal.pmc.utils.Iedit
+            android:textSize="@dimen/text_size_12"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/et_search_edit_list"
+            android:padding="8dp"
+            android:focusableInTouchMode="true"
+            android:descendantFocusability="beforeDescendants"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:hint="Search here"
+            android:ems="10"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lvcountries"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="2dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/nodata"
+        android:background="@drawable/dw_list_selection"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.conceptglobal.pmc.utils.Itext
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="   No Data Available             "
+            android:drawableRight="@drawable/abs__ic_ab_next_holo_light"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/img_round_edges" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.conceptglobal.pmc.utils.Iedit android:textSize="@dimen/text_size_12" android:id="@id/etDistance" android:padding="10.0dip" android:visibility="gone" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:hint="Enter Travel Distance" android:layout_weight="1.0" android:inputType="numberDecimal" />
+        <TextView android:textSize="@dimen/text_size_12" android:padding="10.0dip" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/pmc_endday_description" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:weightSum="2.0">
+            <com.conceptglobal.pmc.utils.Ibutton android:textSize="@dimen/text_size_12" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/btnCloseEndDay" android:background="@drawable/btn" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="Close" android:layout_weight="1.0" />
+            <com.conceptglobal.pmc.utils.Ibutton android:textSize="@dimen/text_size_12" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/btnEndDay" android:background="@drawable/btn" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/ok" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

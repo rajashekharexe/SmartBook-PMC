@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="15.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/filtersGEOList" android:background="@color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+                <com.conceptglobal.pmc.utils.Iedit android:textSize="@dimen/normal_text_size" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center|left" android:id="@id/ed_custType" android:background="@drawable/edt_disable" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="45.0dip" android:layout_margin="2.0dip" android:layout_marginTop="2.0dip" android:hint="Customer Type" android:drawableRight="@drawable/drop" android:layout_weight="1.0" style="@style/edit_text_disable" />
+                <TextView android:id="@id/tvCustTypeId" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+                <com.conceptglobal.pmc.utils.Iedit android:textSize="@dimen/normal_text_size" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center|left" android:id="@id/ed_crop" android:background="@drawable/edt_disable" android:paddingLeft="10.0dip" android:focusable="false" android:layout_width="0.0dip" android:layout_height="45.0dip" android:layout_margin="2.0dip" android:layout_marginTop="2.0dip" android:hint="Crop" android:drawableRight="@drawable/drop" android:layout_weight="1.0" style="@style/edit_text_disable" />
+                <TextView android:id="@id/tvCropId" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+                <com.conceptglobal.pmc.utils.Iedit android:textSize="@dimen/normal_text_size" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center|left" android:id="@id/ed_RadiusSearch" android:background="@drawable/edt_disable" android:paddingLeft="10.0dip" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="45.0dip" android:layout_margin="2.0dip" android:layout_marginTop="2.0dip" android:hint="Radius(kms)" android:layout_weight="1.0" android:inputType="numberDecimal" />
+                <com.conceptglobal.pmc.utils.Iedit android:textSize="@dimen/normal_text_size" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center|left" android:id="@id/ed_Brand" android:background="@drawable/edt_disable" android:paddingLeft="10.0dip" android:focusable="false" android:layout_width="0.0dip" android:layout_height="45.0dip" android:layout_margin="2.0dip" android:layout_marginTop="2.0dip" android:hint="Brand" android:drawableRight="@drawable/drop" android:layout_weight="1.0" style="@style/edit_text_disable" />
+                <TextView android:id="@id/tvBrandId" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <com.conceptglobal.pmc.utils.Itext android:textSize="@dimen/normal_text_size" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/filter_GEO_goBtn" android:paddingLeft="20.0dip" android:paddingTop="8.0dip" android:paddingRight="20.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Go" style="@style/btnStyleBreakerBay" />
+                <com.conceptglobal.pmc.utils.Itext android:textSize="@dimen/normal_text_size" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/filter_GEO_ClearBtn" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:text="Clear" style="@style/btnStyleBreakerBay" />
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/lv_draft_header" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

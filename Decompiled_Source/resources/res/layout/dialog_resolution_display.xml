@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.conceptglobal.pmc.utils.Itext
+            android:textSize="18sp"
+            android:gravity="center"
+            android:id="@+id/txt_ctivtyname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Resolution Status"
+            style="@style/btnStyleBreakerBay"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <com.conceptglobal.pmc.utils.Itext
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Resolved By :"
+                style="@style/text_sub_details"/>
+            <com.conceptglobal.pmc.utils.Itext
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:id="@+id/txt_resolvedName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                style="@style/text_sub_details"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <com.conceptglobal.pmc.utils.Itext
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Remarks :"
+                style="@style/text_sub_details"/>
+            <com.conceptglobal.pmc.utils.Itext
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:id="@+id/txt_resolvedRemarks"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="7"
+                style="@style/text_sub_details"/>
+        </LinearLayout>
+        <com.conceptglobal.pmc.utils.Itext
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:id="@+id/txt_resolvedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Resolved Date :"
+            style="@style/text_sub_details"/>
+        <com.conceptglobal.pmc.utils.Ibutton
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:id="@+id/btnclose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Close"
+            style="@style/btnStyleBreakerBay"/>
+    </LinearLayout>
+</RelativeLayout>

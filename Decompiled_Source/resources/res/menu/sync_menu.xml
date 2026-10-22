@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yourapp="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="0x7f08020e"
+        android:id="@+id/weather_report"
+        android:title="Signal Report"
+        yourapp:showAsAction="always"/>
+    <item
+        android:icon="@drawable/signal_full"
+        android:id="@+id/signal_report"
+        android:title="Signal Report"
+        yourapp:showAsAction="always"/>
+    <item
+        android:icon="@drawable/ic_action_refresh"
+        android:id="@+id/sync_data_village"
+        android:title="Send Data to server"
+        yourapp:showAsAction="always"/>
+</menu>

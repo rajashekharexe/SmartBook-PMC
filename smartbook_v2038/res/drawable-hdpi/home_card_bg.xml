@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:bottom="1.0dip">
+        <shape android:dither="true" android:shape="rectangle">
+            <corners android:radius="3.0dip" />
+            <stroke android:width="0.30000007dip" android:color="@color/home_card_border" />
+            <solid android:color="@color/home_card_bg" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/Material.Drawable.Ripple.Wave.Light">
+    <ImageView
+        android:id="@+id/imgv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.conceptglobal.imaterialdesign.widget.TextView
+        android:textSize="20sp"
+        android:textColor="#ff000000"
+        android:id="@+id/txtitemname"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.conceptglobal.imaterialdesign.widget.TextView
+        android:textSize="20sp"
+        android:textColor="#ff000000"
+        android:id="@+id/txtposition"
+        android:padding="16dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/cardview" android:background="@drawable/edit_bg_custom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="2.0dip" card_view:cardBackgroundColor="@android:color/white" card_view:cardCornerRadius="8.0dip" card_view:cardElevation="2.0dip" card_view:cardUseCompatPadding="true" card_view:contentPadding="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/profile_image" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/phonedail" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/profile_image" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/text_size_14" android:textStyle="bold" android:id="@id/tv_textview_display" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="2.0dip" />
+            <TextView android:textSize="@dimen/text_size_12" android:id="@id/tv_textview_display2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:lineSpacingExtra="2.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/addingdynamicdrafts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toLeftOf="@id/actions" android:layout_toRightOf="@id/profile_image" />
+        <RelativeLayout android:orientation="vertical" android:id="@id/actions" android:layout_width="25.0dip" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/cbSelectFarmer" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

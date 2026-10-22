@@ -1,0 +1,41 @@
+.class public final Lcom/icsssd0328/promotions/R$style;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/icsssd0328/promotions/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "style"
+.end annotation
+
+
+# static fields
+.field public static final AppCompatAlertDialogStyle:I = 0x7f11000a
+
+.field public static final AppTheme:I = 0x7f11000b
+
+.field public static final AppTheme_AppBarOverlay:I = 0x7f11000c
+
+.field public static final AppTheme_NoActionBar:I = 0x7f11000d
+
+.field public static final AppTheme_PopupOverlay:I = 0x7f11000e
+
+.field public static final CustomDialog:I = 0x7f1100e5
+
+.field public static final HTMLDialogAnimation:I = 0x7f110124
+
+.field public static final Theme_AppTheme:I = 0x7f110271
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

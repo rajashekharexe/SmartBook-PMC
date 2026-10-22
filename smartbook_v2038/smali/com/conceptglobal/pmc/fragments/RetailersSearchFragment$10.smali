@@ -1,0 +1,93 @@
+.class Lcom/conceptglobal/pmc/fragments/RetailersSearchFragment$10;
+.super Ljava/lang/Object;
+.source "RetailersSearchFragment.java"
+
+# interfaces
+.implements Lcom/github/amlcurran/showcaseview/targets/Target;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/conceptglobal/pmc/fragments/RetailersSearchFragment;->showOverLayWalkthrough()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/conceptglobal/pmc/fragments/RetailersSearchFragment;
+
+
+# direct methods
+.method constructor <init>(Lcom/conceptglobal/pmc/fragments/RetailersSearchFragment;)V
+    .locals 0
+
+    .line 1106
+    iput-object p1, p0, Lcom/conceptglobal/pmc/fragments/RetailersSearchFragment$10;->this$0:Lcom/conceptglobal/pmc/fragments/RetailersSearchFragment;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getPoint()Landroid/graphics/Point;
+    .locals 3
+
+    .line 1109
+    invoke-static {}, Lcom/conceptglobal/pmc/utils/UtilDeclarations;->getScreenWidth()I
+
+    move-result v0
+
+    .line 1110
+    invoke-static {}, Lcom/conceptglobal/pmc/fragments/RetailersSearchFragment;->access$2300()Landroid/view/Menu;
+
+    move-result-object v1
+
+    const v2, 0x7f0901f8
+
+    invoke-interface {v1, v2}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
+
+    move-result-object v1
+
+    invoke-interface {v1}, Landroid/view/MenuItem;->getIcon()Landroid/graphics/drawable/Drawable;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
+
+    move-result v1
+
+    mul-int/lit8 v1, v1, 0x5
+
+    div-int/lit8 v1, v1, 0x2
+
+    sub-int/2addr v0, v1
+
+    .line 1111
+    new-instance v1, Landroid/graphics/Point;
+
+    iget-object v2, p0, Lcom/conceptglobal/pmc/fragments/RetailersSearchFragment$10;->this$0:Lcom/conceptglobal/pmc/fragments/RetailersSearchFragment;
+
+    invoke-virtual {v2}, Lcom/conceptglobal/pmc/fragments/RetailersSearchFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object v2
+
+    check-cast v2, Landroidx/appcompat/app/AppCompatActivity;
+
+    invoke-virtual {v2}, Landroidx/appcompat/app/AppCompatActivity;->getSupportActionBar()Landroidx/appcompat/app/ActionBar;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroidx/appcompat/app/ActionBar;->getHeight()I
+
+    move-result v2
+
+    invoke-direct {v1, v0, v2}, Landroid/graphics/Point;-><init>(II)V
+
+    return-object v1
+.end method

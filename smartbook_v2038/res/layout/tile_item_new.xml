@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/cardview" android:background="@drawable/home_card_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="2.0dip" card_view:cardElevation="2.0dip" card_view:cardUseCompatPadding="true" card_view:contentPadding="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/contentrl" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/btnrl" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_20" android:textStyle="bold" android:textColor="#ff566566" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Add Farmer" android:layout_toRightOf="@id/btn_bg" android:layout_centerVertical="true" />
+            <RelativeLayout android:id="@id/btn_bg" android:background="@drawable/circle_drawable" android:layout_width="65.0dip" android:layout_height="65.0dip">
+                <ImageView android:id="@id/btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:src="@drawable/ic_add_farmer" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/left_arrow" android:background="@drawable/circle_drawable" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerInParent="true">
+                <ImageView android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:src="@drawable/ic_arrow" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <View android:background="@color/home_card_border" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/btnrl" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:weightSum="3.0" android:layout_below="@id/btnrl">
+            <RelativeLayout android:id="@id/firstdescription" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="#ff666a6d" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="fsadf" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/text_size_20" android:textStyle="bold" android:textColor="@color/colorPrimary" android:id="@id/count" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="22" android:layout_toRightOf="@id/description" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/seconddescription" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_toRightOf="@id/firstdescription" android:layout_below="@id/btnrl" android:layout_alignTop="@id/firstdescription" android:layout_alignBottom="@id/firstdescription" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="#ff666a6d" android:id="@id/description1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="fasdf" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/text_size_20" android:textStyle="bold" android:textColor="#fff9ca9f" android:id="@id/count1" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="33" android:layout_toRightOf="@id/description1" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/thirddescription" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_toRightOf="@id/seconddescription" android:layout_below="@id/btnrl" android:layout_alignTop="@id/seconddescription" android:layout_alignBottom="@id/seconddescription">
+                <TextView android:textSize="@dimen/text_size_12" android:textStyle="bold" android:textColor="#ff666a6d" android:id="@id/description2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="fadsf" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/text_size_20" android:textStyle="bold" android:textColor="@color/red_light" android:id="@id/count2" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="22" android:layout_toRightOf="@id/description2" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

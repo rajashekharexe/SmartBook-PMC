@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dw_list_selection" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.3">
+            <com.conceptglobal.pmc.utils.Itext android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_cropName_crop_display" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:maxLines="2" android:lines="2" android:scrollHorizontally="true" style="@style/text_noraml" />
+            <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.conceptglobal.pmc.utils.Itext android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_cropType_display" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:maxLines="2" android:lines="2" android:scrollHorizontally="true" android:layout_weight="0.1" style="@style/text_noraml" />
+                <com.conceptglobal.pmc.utils.Itext android:textAppearance="?android:textAppearanceSmall" android:gravity="left" android:id="@id/tv_crop_acreage_crop_display" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_weight="0.2" />
+            </LinearLayout>
+            <com.conceptglobal.pmc.utils.Itext android:textAppearance="?android:textAppearanceSmall" android:id="@id/tv_date_sowing_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <com.conceptglobal.pmc.utils.Itext android:textAppearance="?android:textAppearanceSmall" android:id="@id/tv_crop_dos_crop_display" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:background="@drawable/dw_list_selection" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.7">
+            <ImageView android:id="@id/iv_delete_crop_display" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:src="@drawable/ic_action_discard" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

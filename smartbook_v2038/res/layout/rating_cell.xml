@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <com.conceptglobal.pmc.utils.Itext android:textSize="@dimen/text_size" android:textColor="#ff000000" android:id="@id/tvratingtext" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/texttypefacenormal" />
+        <com.conceptglobal.pmc.utils.Itext android:textSize="@dimen/text_size" android:textColor="#ff000000" android:id="@id/tvratingid" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/texttypefacenormal" />
+        <RadioButton android:layout_gravity="right" android:id="@id/rbutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_weight="0.0" />
+    </LinearLayout>
+    <View android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

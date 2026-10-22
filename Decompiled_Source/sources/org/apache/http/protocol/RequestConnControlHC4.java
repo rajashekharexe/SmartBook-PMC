@@ -1,0 +1,20 @@
+package org.apache.http.protocol;
+
+import java.io.IOException;
+import org.apache.http.HttpException;
+import org.apache.http.HttpHeaders;
+import org.apache.http.HttpRequest;
+import org.apache.http.HttpRequestInterceptor;
+import org.apache.http.util.Args;
+
+/* loaded from: classes2.dex */
+public class RequestConnControlHC4 implements HttpRequestInterceptor {
+    @Override // org.apache.http.HttpRequestInterceptor
+    public void process(HttpRequest httpRequest, HttpContext httpContext) throws HttpException, IOException {
+        Args.notNull(httpRequest, "HTTP request");
+        if (httpRequest.getRequestLine().getMethod().equalsIgnoreCase("CONNECT") || httpRequest.containsHeader(HttpHeaders.CONNECTION)) {
+            return;
+        }
+        httpRequest.addHeader(HttpHeaders.CONNECTION, "Keep-Alive");
+    }
+}
