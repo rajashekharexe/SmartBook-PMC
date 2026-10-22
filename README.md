@@ -1,9 +1,9 @@
-# 🌾 Smartbook PMC — Enhanced Edition (v12.1)
+# 🌾 Smartbook PMC — Enhanced Edition (v13.0)
 
 [![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://android.com)
 [![Engine](https://img.shields.io/badge/Reverse%20Engineered-Smali%20%2F%20Dalvik-orange?style=for-the-badge)](https://github.com/JesusFreke/smali)
 [![App Version](https://img.shields.io/badge/App%20Base-2.0.3.8-004B87?style=for-the-badge)](https://github.com/rajashekharexe/SmartBook-PMC)
-[![Release](https://img.shields.io/badge/Release-v12.1%20Stable-brightgreen?style=for-the-badge)](https://github.com/rajashekharexe/SmartBook-PMC/releases)
+[![Release](https://img.shields.io/badge/Release-v13.0%20Stable-brightgreen?style=for-the-badge)](https://github.com/rajashekharexe/SmartBook-PMC/releases)
 [![Status](https://img.shields.io/badge/Status-Production%20Ready-success?style=for-the-badge)]()
 
 > High-performance, reverse-engineered and feature-enhanced distribution of **PMC Smartbook** (`com.conceptglobal.pmcdeepakfertilizers`), the flagship field-operations and crop-management enterprise platform used by Deepak Fertilisers & Petrochemicals Corp. Ltd. (Mahadhan) Field Officers (FO) and Market Development Officers (MDO).
@@ -14,7 +14,7 @@
 
 - [Overview](#-overview)
 - [Key Features & Innovations](#-key-features--innovations)
-  - [1. CPU Nanosecond Micro-Jitter (v12.1)](#1-cpu-nanosecond-micro-jitter-v121)
+  - [1. CPU Nanosecond Micro-Jitter (v13.0)](#1-cpu-nanosecond-micro-jitter-v130)
   - [2. Intelligent Dealer Geofencing Bypass & Coordinate Injection](#2-intelligent-dealer-geofencing-bypass--coordinate-injection)
   - [3. Dual-Action Camera & Gallery Picker](#3-dual-action-camera--gallery-picker)
   - [4. Native Farmer Directory Exporter (PDF & Multi-Sheet Excel)](#4-native-farmer-directory-exporter-pdf--multi-sheet-excel)
@@ -38,7 +38,7 @@ This project delivers a modified, robust standalone APK that maintains **100% se
 
 ## 🚀 Key Features & Innovations
 
-### 1. CPU Nanosecond Micro-Jitter (v12.1)
+### 1. CPU Nanosecond Micro-Jitter (v13.0)
 * **The Challenge:** Hardcoding or copying exact outlet coordinates across dozens of visits creates an identical digital signature down to 7 decimal places (e.g., `18.5204300, 73.8567400`), which backend audit scripts can flag as synthetic.
 * **The Solution:** Uses `System.nanoTime()` hardware entropy to calculate a natural **$0.8\text{m}$ to $2.5\text{m}$** 2D radial drift:
   * **Latitude Delta:** Derived from `(nano % 4000) - 2000` / $10^8$.
@@ -79,7 +79,7 @@ This project delivers a modified, robust standalone APK that maintains **100% se
 flowchart TD
     subgraph UI_Layer["UI & Interaction Layer"]
         A["Dealer / Farmer Selection List"] --> B{"Is Inside Radius?"}
-        B -->|"v12.1: Forced True"| C["Normal White Card"]
+        B -->|"Forced True"| C["Normal White Card"]
         C --> D["Tap Card -> FarmerFormActivity"]
         D --> E["Camera Icon"]
         E -->|"Tap"| F["Camera Capture"]
@@ -137,24 +137,24 @@ flowchart TD
 
 ### 1. Compile the Smali Tree
 ```powershell
-java -jar tools/apktool.jar b smartbook_v2038 -o Smartbook_PMC_v12.1_unsigned.apk
+java -jar tools/apktool.jar b smartbook_v2038 -o Smartbook_PMC_v13_unsigned.apk
 ```
 
 ### 2. Sign and Align the APK
 ```powershell
 java -jar tools/uber-apk-signer.jar `
-  -a Smartbook_PMC_v12.1_unsigned.apk `
+  -a Smartbook_PMC_v13_unsigned.apk `
   --ksDebug "$HOME\.android\debug.keystore" `
   -o .
 
 # Rename signed output
-Move-Item -Force "Smartbook_PMC_v12.1_unsigned-aligned-debugSigned.apk" "Smartbook_PMC_v12.1.apk"
-Remove-Item -Force "Smartbook_PMC_v12.1_unsigned.apk"
+Move-Item -Force "Smartbook_PMC_v13_unsigned-aligned-debugSigned.apk" "Smartbook_PMC_v13.apk"
+Remove-Item -Force "Smartbook_PMC_v13_unsigned.apk"
 ```
 
 ### 3. Verify Signature Schemes (v1, v2, v3)
 ```powershell
-java -jar tools/uber-apk-signer.jar -y -a Smartbook_PMC_v12.1.apk --verbose
+java -jar tools/uber-apk-signer.jar -y -a Smartbook_PMC_v13.apk --verbose
 ```
 *Expected Output:*
 * `zipalign verified`
@@ -165,9 +165,10 @@ java -jar tools/uber-apk-signer.jar -y -a Smartbook_PMC_v12.1.apk --verbose
 
 ## 📜 Release History
 
-### **v12.1 (Current Release)**
-- **Hardware-Level CPU Nano Jitter:** Uses `System.nanoTime()` to generate realistic $0.8\text{m} - 2.5\text{m}$ 2D radial drift on dealer visit coordinates.
+### **v13.0 (Current Release)**
+- **Hardware-Level CPU Nano Jitter:** Uses `System.nanoTime()` with prime decorrelation to generate realistic $0.8\text{m} - 2.5\text{m}$ 2D radial drift on dealer visit coordinates.
 - **Sync Safety:** Guarantees no two visits to the same dealer share identical decimal coordinates.
+- **Production Package:** Delivered as `Smartbook_PMC_v13.apk`.
 
 ### **v12.0**
 - **Dealer Geofencing Bypass:** Resolved `"Access denied, Need to be in the Outlet Location"`.
