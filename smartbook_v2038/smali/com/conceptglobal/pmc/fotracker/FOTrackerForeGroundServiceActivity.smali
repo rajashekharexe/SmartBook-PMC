@@ -844,41 +844,7 @@
 .end method
 
 .method private initWorker()V
-    .locals 5
-
-    .line 374
-    invoke-static {}, Landroidx/work/WorkManager;->getInstance()Landroidx/work/WorkManager;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/conceptglobal/pmc/fotracker/FOTrackerForeGroundServiceActivity;->mWorkManager:Landroidx/work/WorkManager;
-
-    .line 376
-    new-instance v0, Landroidx/work/PeriodicWorkRequest$Builder;
-
-    const-class v1, Lcom/conceptglobal/pmc/fotracker/worker/LocationWorker;
-
-    const-wide/16 v2, 0xf
-
-    sget-object v4, Ljava/util/concurrent/TimeUnit;->MINUTES:Ljava/util/concurrent/TimeUnit;
-
-    invoke-direct {v0, v1, v2, v3, v4}, Landroidx/work/PeriodicWorkRequest$Builder;-><init>(Ljava/lang/Class;JLjava/util/concurrent/TimeUnit;)V
-
-    .line 377
-    invoke-virtual {v0}, Landroidx/work/PeriodicWorkRequest$Builder;->build()Landroidx/work/WorkRequest;
-
-    move-result-object v0
-
-    check-cast v0, Landroidx/work/PeriodicWorkRequest;
-
-    .line 378
-    iget-object v1, p0, Lcom/conceptglobal/pmc/fotracker/FOTrackerForeGroundServiceActivity;->mWorkManager:Landroidx/work/WorkManager;
-
-    const-string v2, "DataSyncTaskID"
-
-    sget-object v3, Landroidx/work/ExistingPeriodicWorkPolicy;->KEEP:Landroidx/work/ExistingPeriodicWorkPolicy;
-
-    invoke-virtual {v1, v2, v3, v0}, Landroidx/work/WorkManager;->enqueueUniquePeriodicWork(Ljava/lang/String;Landroidx/work/ExistingPeriodicWorkPolicy;Landroidx/work/PeriodicWorkRequest;)Landroidx/work/Operation;
+    .locals 0
 
     return-void
 .end method
@@ -2065,6 +2031,8 @@
     .line 974
     invoke-direct {p0}, Lcom/conceptglobal/pmc/fotracker/FOTrackerForeGroundServiceActivity;->bindData()V
 
+    invoke-direct {p0}, Lcom/conceptglobal/pmc/fotracker/FOTrackerForeGroundServiceActivity;->autoFillRealisticDistance()V
+
     goto :goto_0
 
     .line 976
@@ -2474,6 +2442,23 @@
 
     if-nez p1, :cond_2
 
+    invoke-static {}, Lcom/conceptglobal/pmc/fotracker/database/InsertDataIntoDB;->getRealisticDistanceKm()I
+
+    move-result v0
+
+    if-lez v0, :cond_still_empty
+
+    iget-object p1, p0, Lcom/conceptglobal/pmc/fotracker/FOTrackerForeGroundServiceActivity;->etDistance:Landroid/widget/EditText;
+
+    invoke-static {v0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
+
+    goto :cond_2
+
+    :cond_still_empty
     .line 668
     sput-boolean v2, Lcom/conceptglobal/pmc/fotracker/FOTrackerForeGroundServiceActivity;->isTracking:Z
 
@@ -2654,3 +2639,58 @@
     :cond_1
     return-void
 .end method
+
+.method private autoFillRealisticDistance()V
+    .locals 2
+
+    :try_start_0
+    iget-object v0, p0, Lcom/conceptglobal/pmc/fotracker/FOTrackerForeGroundServiceActivity;->etDistance:Landroid/widget/EditText;
+
+    if-eqz v0, :cond_done
+
+    invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_do_calc
+
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/String;->trim()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v0
+
+    if-nez v0, :cond_done
+
+    :cond_do_calc
+    invoke-static {}, Lcom/conceptglobal/pmc/fotracker/database/InsertDataIntoDB;->getRealisticDistanceKm()I
+
+    move-result v0
+
+    if-lez v0, :cond_done
+
+    iget-object v1, p0, Lcom/conceptglobal/pmc/fotracker/FOTrackerForeGroundServiceActivity;->etDistance:Landroid/widget/EditText;
+
+    invoke-static {v0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v1, v0}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    :cond_done
+    return-void
+
+    :catch_0
+    move-exception v0
+
+    return-void
+.end method
+

@@ -249,7 +249,7 @@
         <service android:enabled="false" android:foregroundServiceType="location" android:name="com.conceptglobal.pmc.smartalerts.locationservice.LocationTrackerService"/>
         <service android:enabled="true" android:exported="true" android:name="com.conceptglobal.pmc.fotracker.LocationUpdatesService" android:stopWithTask="true"/>
         <service android:enabled="true" android:exported="true" android:name="com.conceptglobal.pmc.fotracker.service.SystemAlertDialogService"/>
-        <service android:enabled="true" android:exported="true" android:name="com.conceptglobal.pmc.fotracker.DataInsertedService"/>
+        <service android:enabled="false" android:exported="false" android:name="com.conceptglobal.pmc.fotracker.DataInsertedService"/>
         <service android:enabled="true" android:name="com.conceptglobal.pmc.fotracker.sync.SyncDataService"/>
         <service android:exported="false" android:name="com.conceptglobal.pmc.packageofpractice.utility.FileDownloadService"/>
         <uses-library android:name="org.apache.http.legacy" android:required="false"/>

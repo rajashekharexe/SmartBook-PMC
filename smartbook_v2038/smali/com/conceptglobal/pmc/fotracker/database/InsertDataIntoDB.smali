@@ -1567,3 +1567,193 @@
     .line 231
     throw p0
 .end method
+
+.method public static getRealisticDistanceKm()I
+    .locals 17
+
+    const/4 v0, 0x0
+
+    :try_start_0
+    sget-object v1, Lcom/conceptglobal/pmc/fotracker/database/InsertDataIntoDB;->dbInstance:Lcom/conceptglobal/pmc/database/DataBaseHandler;
+
+    if-nez v1, :cond_db_ok
+
+    invoke-static {}, Lcom/conceptglobal/pmc/database/DataBaseHandler;->getInstance()Lcom/conceptglobal/pmc/database/DataBaseHandler;
+
+    move-result-object v1
+
+    sput-object v1, Lcom/conceptglobal/pmc/fotracker/database/InsertDataIntoDB;->dbInstance:Lcom/conceptglobal/pmc/database/DataBaseHandler;
+
+    :cond_db_ok
+    sget-object v1, Lcom/conceptglobal/pmc/fotracker/database/InsertDataIntoDB;->dbInstance:Lcom/conceptglobal/pmc/database/DataBaseHandler;
+
+    invoke-virtual {v1}, Lcom/conceptglobal/pmc/database/DataBaseHandler;->openDatabase()Landroid/database/sqlite/SQLiteDatabase;
+
+    move-result-object v1
+
+    if-nez v1, :cond_open_ok
+
+    return v0
+
+    :cond_open_ok
+    const-string v2, "SELECT Latitude, Longitude FROM FoTrackerDetails WHERE TrackId = (SELECT Max(TrackId) FROM FoTrackerHeader) ORDER BY DetailsId ASC"
+
+    const/4 v3, 0x0
+
+    invoke-virtual {v1, v2, v3}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+
+    move-result-object v12
+
+    if-nez v12, :cond_cursor_ok
+
+    return v0
+
+    :cond_cursor_ok
+    const/4 v1, 0x1
+
+    new-array v10, v1, [F
+
+    const-wide/16 v0, 0x0
+
+    const-wide/16 v2, 0x0
+
+    const-wide/16 v4, 0x0
+
+    const/4 v11, 0x0
+
+    :goto_loop
+    invoke-interface {v12}, Landroid/database/Cursor;->moveToNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_loop_done
+
+    const/4 v1, 0x0
+
+    invoke-interface {v12, v1}, Landroid/database/Cursor;->getDouble(I)D
+
+    move-result-wide v6
+
+    const/4 v1, 0x1
+
+    invoke-interface {v12, v1}, Landroid/database/Cursor;->getDouble(I)D
+
+    move-result-wide v8
+
+    const-wide/16 v13, 0x0
+
+    cmpl-double v1, v6, v13
+
+    if-nez v1, :cond_check_first
+
+    cmpl-double v1, v8, v13
+
+    if-nez v1, :cond_check_first
+
+    goto :goto_loop
+
+    :cond_check_first
+    if-eqz v11, :cond_set_first
+
+    invoke-static/range {v2 .. v10}, Landroid/location/Location;->distanceBetween(DDDD[F)V
+
+    const/4 v1, 0x0
+
+    aget v16, v10, v1
+
+    const/high16 v1, 0x41200000    # 10.0f
+
+    cmpg-float v1, v16, v1
+
+    if-gez v1, :cond_check_max
+
+    goto :goto_set_last
+
+    :cond_check_max
+    const v1, 0x459c4000    # 5000.0f
+
+    cmpl-float v1, v16, v1
+
+    if-lez v1, :cond_add_dist
+
+    goto :goto_set_last
+
+    :cond_add_dist
+    move/from16 v1, v16
+
+    float-to-double v13, v1
+
+    add-double/2addr v0, v13
+
+    goto :goto_set_last
+
+    :cond_set_first
+    const/4 v11, 0x1
+
+    :goto_set_last
+    move-wide v2, v6
+
+    move-wide v4, v8
+
+    goto :goto_loop
+
+    :cond_loop_done
+    invoke-interface {v12}, Landroid/database/Cursor;->close()V
+
+    const-wide v1, 0x407f400000000000L    # 500.0
+
+    cmpg-double v1, v0, v1
+
+    if-gtz v1, :cond_calc_km
+
+    const/4 v0, 0x0
+
+    return v0
+
+    :cond_calc_km
+    const-wide v1, 0x408f400000000000L    # 1000.0
+
+    div-double/2addr v0, v1
+
+    invoke-static {}, Ljava/lang/System;->nanoTime()J
+
+    move-result-wide v2
+
+    invoke-static {v2, v3}, Ljava/lang/Math;->abs(J)J
+
+    move-result-wide v2
+
+    const-wide/16 v4, 0x3c
+
+    rem-long/2addr v2, v4
+
+    long-to-double v2, v2
+
+    const-wide v4, 0x408f400000000000L    # 1000.0
+
+    div-double/2addr v2, v4
+
+    const-wide v4, 0x3ff1c71c71c71c72L    # 1.1111111111111112
+
+    add-double/2addr v2, v4
+
+    mul-double/2addr v0, v2
+
+    invoke-static {v0, v1}, Ljava/lang/Math;->round(D)J
+
+    move-result-wide v0
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_calc
+
+    long-to-int v0, v0
+
+    return v0
+
+    :catch_calc
+    move-exception v0
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+

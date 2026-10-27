@@ -472,6 +472,30 @@
 .method private onNewLocation(Landroid/location/Location;)V
     .locals 4
 
+    invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
+
+    move-result-object v0
+
+    const/16 v1, 0xb
+
+    invoke-virtual {v0, v1}, Ljava/util/Calendar;->get(I)I
+
+    move-result v0
+
+    const/16 v1, 0x15
+
+    if-ge v0, v1, :cond_sleep_guard
+
+    const/4 v1, 0x6
+
+    if-ge v0, v1, :cond_normal_loc
+
+    :cond_sleep_guard
+    invoke-virtual {p0}, Lcom/conceptglobal/pmc/fotracker/LocationUpdatesService;->removeLocationUpdates()V
+
+    return-void
+
+    :cond_normal_loc
     .line 508
     sget-object v0, Lcom/conceptglobal/pmc/fotracker/LocationUpdatesService;->TAG:Ljava/lang/String;
 
@@ -1123,6 +1147,14 @@
 
     .line 676
     invoke-virtual {p0, v0}, Lcom/conceptglobal/pmc/fotracker/LocationUpdatesService;->sendBroadcast(Landroid/content/Intent;)V
+
+    invoke-virtual {p0}, Lcom/conceptglobal/pmc/fotracker/LocationUpdatesService;->removeLocationUpdates()V
+
+    const/4 v0, 0x1
+
+    invoke-virtual {p0, v0}, Lcom/conceptglobal/pmc/fotracker/LocationUpdatesService;->stopForeground(Z)V
+
+    invoke-virtual {p0}, Lcom/conceptglobal/pmc/fotracker/LocationUpdatesService;->stopSelf()V
 
     .line 677
     invoke-super {p0, p1}, Landroid/app/Service;->onTaskRemoved(Landroid/content/Intent;)V
